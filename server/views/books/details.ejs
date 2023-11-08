@@ -6,6 +6,7 @@
         <div class="col-md-offset-3 col-md-6">
           <h1><%= title %></h1>
             <form class="form" method="post" action="/books/add">
+              <input type="hidden" name="id" value="<%= books._id %>" />
               <div class="form-group">
                 <label for="NameTextField">Title</label>
                 <input type="text" class="form-control" id="NameTextField"
